@@ -257,7 +257,7 @@ nav .close-icon {
     background-color: #000000;
     
 }
-.card:hover .title{
+.card:hover .titlee{
 color: #ffffff;
 }
 .card:hover .desc{
@@ -300,7 +300,7 @@ color: #ffffff;
 	position: relative;
 	padding: 2rem 3rem;
 }
-.title {
+.titlee {
 	font-size: 2rem;
     box-sizing: border-box;
     -webkit-font-smoothing:antialiased;
@@ -541,6 +541,83 @@ color: #ffffff;
         outline: 15px solid #f3f9ff00;
     }
 }
-.banner-text, .php-text, .php-img, .conectar, .card, .informacoes, .cards{
+.banner-text, .php-text, .php-img, .conectar, .card, .informacoes, .cards, .accordion{
     visibility: hidden;
+}
+.title {
+    font-size: clamp(26px, 5vw, 40px);
+    color: #000000;
+    justify-items: center;
+    align-items: center;
+    margin: 5rem;
+    margin-bottom: 30px;
+}
+
+.accordion-panel {
+    padding: 7px 21px;
+    margin-bottom: 24px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding-block: 7px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+.accordion label:hover,
+.accordion input:checked + label {
+    color: #000000;
+}
+
+.accordion i {
+    color: #000000;
+}
+
+.accordion .close {
+    display: none;
+}
+
+.accordion input:checked + label .close {
+    display: block;
+}
+
+.accordion input:checked + label .open {
+    display: none;
+}
+
+.accordion-body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+}
+
+.accordion-answer {
+    font-size: 14px;
+    color: #000000;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: opacity 0.75s, transform 0.15s;
+}
+
+.accordion input:checked ~ .accordion-body {
+    height: max-content;
+}
+
+.accordion input:checked ~ .accordion-body .accordion-answer {
+    opacity: 1;
+    transform: scale(1);
 }

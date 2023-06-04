@@ -32,5 +32,7 @@ sr.reveal('.informacoes', {duration:1000});
 
 sr.reveal('.cards', {duration:1000});
 
+sr.reveal('.accordion', {duration:1000});
+
 
 
