@@ -21,7 +21,7 @@
         <div class="container">
             <nav>
                 <a href="index.html">
-                    <!-- <img src="assets/logo.png" alt="logo"> -->
+                     <!-- <img src="assets/computador.png" alt="logo"> -->
                 </a>
                 <ul class="ul">
                     <a href="Tad.html">TAD</a>
