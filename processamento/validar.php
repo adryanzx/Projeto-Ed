@@ -1,28 +1,24 @@
 <?php 
-require_once "funcoesBD.php";
+session_start();
+require "funcoesBD.php";
 
-function validar(){
-        $nomecompleto = $_POST['nomecompleto'];   
-        $email = $_POST['email'];
-        $cpf = $_POST['cpf'];
-        $senha = $_POST['senha'];
-        $conexao = conectarBD();
-        $consulta = "SELECT email FROM aluno WHERE email = '$email' AND senha = '$senha'";
-        $lista = mysqli_query($conexao,$consulta);
-        if(mysqli_fetch_assoc($lista) > 0){
-            session_start();
-            $_SESSION["login"] = "ok";
-            header("Location:Tad.php?error=SUCESSO");
-        }else {
-            header("Location: index.php?error=login");
-        }
-    }
-}
+//DECLARAÇÃO DE VARIÁVEIS
+$email = $_POST['login_email'];
+$senha = $_POST['login_senha'];
+$logar = $_POST['logar'];
 
-function sessaoUsuario(){
-    session_start();
-    if(!@$_SESSION["login"] == "ok"){
-        header("Location: index.php?error=ENTRAR");
-    }
+$conn = conectarBD();
+
+// Consulta a tabela 
+$sql = "SELECT * FROM aluno WHERE alu_email='$email' AND alu_senha='$senha'";
+$result = $conn->query($sql);
+
+// Verifica se encontrou algum aluno
+if ($result->num_rows > 0) {
+    // Armazena os dados do aluno na sessão
+    $_SESSION['usuario'] = $result->fetch_assoc();
+    // Redireciona para a página de home
+    header("Location: Tad.php");
+    exit;
 }
 ?>

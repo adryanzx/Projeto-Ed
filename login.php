@@ -13,38 +13,48 @@
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
-   
     <link rel="stylesheet" href="css/style.css">
-    <title>CADASTRO</title>
+    <title>LOGIN</title>
 </head>
 
 <body>
 
 
 
-
     <header>
         <section class='cabecalho-logo'>
             <img src='assets/computador.png'>
-           
+          
            
         </section>
         
     </header>
     <section id="login-box">
         <section id="login">
-            <h1 id="login-texto">Cadastrar</h1>
-            <form method="POST" action="../processamento/processamento.php">
-                <input type="text" name="Nome Completo" value="" placeholder="Nome Completo" class="login-input"><br>
+            <h1 id="login-texto">Login</h1>
+            <form action="../processamento/validacao.php" method="post">
                 <input type="text" name="email" value="" placeholder="Email" class="login-input"><br>
-                <input type="number" name="cpf" value="" placeholder="CPF" class="login-input"><br>
                 <input type="password" name="senha" value="" placeholder="Senha" class="login-input"><br>
-                <input type="submit" value="Cadastrar" id="login-submit">
+                <input type="submit" value="ENTRE" id="login-submit">
             </form>
-            
-            
+            <section id="links">
+                <a href="">Esqueci minha senha</a>
+                <a href="">Fazer login com SMS</a>
+            </section>
+            <section id="ou">
+                <hr>OU<hr>
+            </section>
+            <section id="links-botao">
+                <button onclick="alert('....')"><img src="assets/facebook.png">Facebook</button>
+                <button onclick="alert('....')"><img src="assets/google.png">Google</button>
+                <button onclick="alert('....')"><img src="assets/apple.png" >Apple</button>
+            </section>
+            <p>
+                <l>Aluno Novo? </l><a href="cadastro.php"> Cadastrar</a>
+            </p>
         </section>
     </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -61,5 +71,22 @@
         </div>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </html>
 </body>
-</html>
