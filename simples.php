@@ -23,13 +23,13 @@
  <header style="background-image: url(./assets/fundo.png)">
         <div class="container">
             <nav>
-                <a href="index.html">
+                <a href="index.php">
                     <!-- <img src="assets/logo.png" alt="logo"> -->
                 </a>
                 <ul class="ul">
-                    <a href="Tad.html">TAD</a>
-                    <a href="simples.html">Lista Simples</a>
-                    <a href="dupla.html">Lista Dupla</a>
+                    <a href="Tad.php">TAD</a>
+                    <a href="simples.php">Lista Simples</a>
+                    <a href="dupla.php">Lista Dupla</a>
                     <a class="btn" href="Sobre.html">Sobre Nós</a>
                     <div class="close-icon" onclick="closeMenu()">
                         <i class="fa fa-times-circle"></i>

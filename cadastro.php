@@ -34,11 +34,11 @@
     <section id="login-box">
         <section id="login">
             <h1 id="login-texto">Cadastrar</h1>
-            <form method="POST" action="../processamento/processamento.php">
-                <input type="text" name="Nome Completo" value="" placeholder="Nome Completo" class="login-input"><br>
-                <input type="text" name="email" value="" placeholder="Email" class="login-input"><br>
-                <input type="number" name="cpf" value="" placeholder="CPF" class="login-input"><br>
-                <input type="password" name="senha" value="" placeholder="Senha" class="login-input"><br>
+            <form method="POST" action="processamento/processamento.php">
+                <input type="text" name="nomecompleto" value="" placeholder="Nome Completo" class="login-input"><br>
+                <input type="text" name="cpf" value="" placeholder="cpf" class="login-input"><br>
+                <input type="text" name="email" value="" placeholder="email" class="login-input"><br>
+                <input type="text" name="senha" value="" placeholder="Senha" class="login-input"><br>
                 <input type="submit" value="Cadastrar" id="login-submit">
             </form>
             

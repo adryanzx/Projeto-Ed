@@ -24,9 +24,9 @@
                      <!-- <img src="assets/computador.png" alt="logo"> -->
                 </a>
                 <ul class="ul">
-                    <a href="Tad.html">TAD</a>
-                    <a href="simples.html">Lista Simples</a>
-                    <a href="dupla.html">Lista Dupla</a>
+                    <a href="Tad.php">TAD</a>
+                    <a href="simples.php">Lista Simples</a>
+                    <a href="dupla.php">Lista Dupla</a>
                     <a class="btn" href="sobre.html">Sobre Nós</a>
                     <div class="close-icon" onclick="closeMenu()">
                         <i class="fa fa-times-circle"></i>
@@ -40,7 +40,7 @@
                 <div class="banner-text">
                     <h1>Listas Encadeadas</h1>
                     <p>Aprenda mais sobre as Listas Encadeadas da linguagem C#</p>
-                    <a href="sobre.html" class="btn animate-btn">Sobre Nós</a>
+                    <a href="sobre.php" class="btn animate-btn">Sobre Nós</a>
                 </div>
             </section>
             
@@ -54,7 +54,7 @@
             <div class="php-text">
                 <h3>Lista Ligada</h3>
                 <p>Uma lista encadeada ou lista ligada é uma estrutura de dados linear e dinâmica. Ela é composta por várias células que estão interligadas através de ponteiros, ou seja, cada célula possui um ponteiro que aponta para o endereço de memória da próxima célula.</p>
-                     <a href="dupla.html" class="btn animate-btn">Saiba Mais</a>
+                     <a href="dupla.php" class="btn animate-btn">Saiba Mais</a>
             </div>
             <div class="php-img">
                 <img src="assets/imagem1.png"></a>
@@ -72,7 +72,7 @@
                 <h3>Encadeadas</h3>
                 <p>Listas encadeadas. Uma lista encadeada é uma representação de uma sequência de objetos, todos do mesmo tipo, na memória RAM (= random access memory) do computador. Cada elemento da sequência é armazenado em uma célula da lista: o primeiro elemento na primeira célula, o segundo na segunda, e assim por diante.
                 </p>
-                     <a href="simples.html" class="btn animate-btn">Saiba Mais</a>
+                     <a href="simples.php" class="btn animate-btn">Saiba Mais</a>
             </div>
            
         </div>
@@ -84,7 +84,7 @@
             <div class="php-text">
                 <h3>Lista & Estrutura de Dados</h3>
                 <p>Uma Lista Encadeada é uma estrutura de dados do tipo container, ou seja, serve para armazenar elementos em uma certa ordem. A lista encadeada oferece operações de acesso geral, tais como inserção, remoção e busca arbitrária.</p>
-                     <a href="dupla.html" class="btn animate-btn">Saiba Mais</a>
+                     <a href="dupla.php" class="btn animate-btn">Saiba Mais</a>
             </div>
             <div class="php-img">
                 <img src="assets/imagem2.png"></a>

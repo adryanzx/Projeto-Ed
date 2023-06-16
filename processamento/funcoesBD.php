@@ -8,13 +8,13 @@
     function inserirCliente($cpf, $nomecompleto, $email,  $senha){
         
         $conexao = conectarBD();
-        $consulta = "INSERT INTO cliente (cpf, nomecompleto ,email, senha) 
+        $consulta = "INSERT INTO aluno (aluno_cpf, aluno_nome, aluno_email, aluno_senha) 
                      VALUES ('$cpf','$nomecompleto','$email','$senha')";
         mysqli_query($conexao,$consulta);
-        echo "<script>alert('CADASTRO EFETUADO');
-        window.location.href='cadastro.php'</script>";
-    }
 
+        echo "<script>alert('CADASTRO EFETUADO');";
+        echo "window.location.href='../cadastro.php';</script>";
+    }
 
 
 ?>

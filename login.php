@@ -32,7 +32,7 @@
     <section id="login-box">
         <section id="login">
             <h1 id="login-texto">Login</h1>
-            <form action="../processamento/validacao.php" method="post">
+            <form action="processamento/validar.php" method="post">
                 <input type="text" name="email" value="" placeholder="Email" class="login-input"><br>
                 <input type="password" name="senha" value="" placeholder="Senha" class="login-input"><br>
                 <input type="submit" value="ENTRE" id="login-submit">
