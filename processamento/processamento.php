@@ -4,19 +4,19 @@
    
    
    //Cadastro de Aluno
-   if(isset($_POST['nomecompleto'])  && 
+   if(isset($_POST['nome'])  && 
       isset($_POST['email'])  && 
       isset($_POST['cpf']) &&
       isset($_POST['senha'])){
 
        $cpf = $_POST['cpf'];
-       $nomecompleto = $_POST['nomecompleto'];
+       $nomecompleto = $_POST['nome'];
        $email = $_POST['email'];
        $senha = $_POST['senha'];
        
-       inserirCliente($cpf, $nomecompleto, $email, $senha);
+       inserirCliente($cpf, $nome, $email, $senha);
    
-       header('Location:../cadastro.php');
+       header('Location:../index.php');
        die();
        }
 

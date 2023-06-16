@@ -34,5 +34,19 @@ sr.reveal('.cards', {duration:1000});
 
 sr.reveal('.accordion', {duration:1000});
 
-
+$("#signup").click(function() {
+    $(".message").css("transform", "translateX(100%)");
+    if ($(".message").hasClass("login")) {
+      $(".message").removeClass("login");
+    }
+    $(".message").addClass("signup");
+  });
+  
+  $("#login").click(function() {
+    $(".message").css("transform", "translateX(0)");
+    if ($(".message").hasClass("login")) {
+      $(".message").removeClass("signup");
+    }
+    $(".message").addClass("login");
+  });
 
