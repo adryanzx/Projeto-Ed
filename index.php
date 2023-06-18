@@ -13,7 +13,7 @@
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Aluno</title>
 </head>
 
@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="form form--signup">
-    <div class="form--heading">Bem-vindo Aluno(a)! Cadastra-se</div>
+    <div class="form--heading">Bem-vindo Aluno(a)</div>
     <form autocomplete="off">
     <form method="POST" action="processamento/processamento.php">
       <input type="text" placeholder="Nome">
@@ -55,10 +55,30 @@
 </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src="js/main.js"></script>
+  <script>
+
+$("#signup").click(function() {
+    $(".message").css("transform", "translateX(100%)");
+    if ($(".message").hasClass("login")) {
+      $(".message").removeClass("login");
+    }
+    $(".message").addClass("signup");
+  });
+  
+  $("#login").click(function() {
+    $(".message").css("transform", "translateX(0)");
+    if ($(".message").hasClass("login")) {
+      $(".message").removeClass("signup");
+    }
+    $(".message").addClass("login");
+  });
+
+  </script>
 
 
 
+
+  
 
 
 
